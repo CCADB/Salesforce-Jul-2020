@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Need Audit/CP/CPS for Intermediate Certificates</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Need Audit/CP/CPS for Intermediate Certificates</name>
+    <style>none</style>
+    <subject>Need Audit or CP/CPS for Intermediate Certificates</subject>
+    <textOnly>Dear Certification Authority,
+
+This is a courtesy reminder from Mozilla that audit statements or CP/CPS documents are missing for the following intermediate certificate records in the Common CA Database (CCADB):  
+
+{!IntermediateCertificateList}  
+
+For each of the certificates listed above, please update their record in the CCADB to provide audit and policy information as described here:
+
+https://ccadb.org/cas/
+
+This is an automated email that will be sent regularly until the audit statements and policy documents have been correctly disclosed in the CCADB.
+
+Regards,
+
+{!User.FirstName} {!User.LastName}
+{!User.CompanyName}
+{!User.Title}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
